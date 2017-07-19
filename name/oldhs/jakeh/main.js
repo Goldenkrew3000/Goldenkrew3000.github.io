@@ -4,16 +4,10 @@ var green = [75, 100, 40];
 var blue = [196, 77, 55];
 var purple = [280, 50, 60];
 
-var myName = "Cody!!!";
+var myName = "Jake!!!";
 var letterColors = [red, orange, green, blue, purple];
 
-if(3 < 10) {
-    bubbleShape = "circle";
-}
-else {
-    bubbleShape = "square";
-}
-
+bubbleShape = "square";
 
 drawName(myName, letterColors);
 bounceBubbles();
