@@ -8,9 +8,15 @@
 			}
 		</style>
 		<script>
-			var x = "successful";
+			var fullFeet;
+			var halfFeet;
+			var fullMetre;
+			var halfMetre;
+			var freq;
+
 			function dipole_calc() {
-				alert(x);
+				freq = document.getElementById("frequency").value;
+				document.getElementById("demo").innerHTML = freq;
 			}
 		</script>
 	</head>
@@ -36,13 +42,13 @@
 				<form onsubmit="dipole_calc()">
 					<font face="verdana">Dipole Length Calculator</font><br>
 					<font face="verdana">MHz:</font>
-					<input type="text" name="frequency_text"><br><br>
+					<input type="text" name="frequency_text" id="frequency"><br><br>
 					<input type="submit" value="Calculate!">
 				</form>
 			</center>
 		</page_form>
 		<homepage_link>
-
+			<p id="demo"></p>
 		</homepage_link>
 		<copyright_footer>
 			<center>
