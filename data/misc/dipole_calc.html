@@ -7,7 +7,7 @@
 				background-image: url("../../images/background.png");
 			}
 		</style>
-		<script>
+		<script type="text/javascript">
 			var fullFeet;
 			var halfFeet;
 			var fullMetre;
@@ -17,6 +17,16 @@
 			function dipole_calc() {
 				freq = document.getElementById("frequency").value;
 				document.getElementById("demo").innerHTML = freq;
+
+				fullFeet = 468 / freq;
+				halfFeet = fullFeet / 2;
+				fullMetre = 143 / freq;
+				halfMetre = fullMetre / 2;
+
+				document.getElementById("demo").innerHTML = fullFeet;
+				document.getElementById("demo2").innerHTML = halfFeet;
+				document.getElementById("demo3").innerHTML = fullMetre;
+				document.getElementById("demo4").innerHTML = halfMetre;
 			}
 		</script>
 	</head>
@@ -49,6 +59,9 @@
 		</page_form>
 		<homepage_link>
 			<p id="demo"></p>
+			<p id="demo2"></p>
+			<p id="demo3"></p>
+			<p id="demo4"></p>
 		</homepage_link>
 		<copyright_footer>
 			<center>
