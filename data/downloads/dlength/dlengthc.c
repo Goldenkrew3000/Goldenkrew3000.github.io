@@ -1,3 +1,10 @@
+/*
+// Dipole Length Calculator
+// Console Version
+// By Michael Geraghty
+// Go to malexty.com for more information
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
